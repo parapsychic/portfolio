@@ -7,7 +7,7 @@ const Projects = () => {
 
 
   return (
-    <div id='projects' className='pb-10 flex flex-col items-center justify-center mt-16 h-fill '>
+    <div id='projects' className='pb-10 flex flex-col items-center justify-center mt-16 mb-10 h-fill '>
       <h3 className='text-dim-blue'>Projects</h3>
       <h2 className='text-3xl'>My Port<span className='text-highlight-font '>folio</span></h2>
 

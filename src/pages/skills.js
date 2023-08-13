@@ -4,7 +4,7 @@ import SkillCard from '../components/skill-tile'
 // make a component that takes in props
 const Skills = () => {
   return (
-    <div id='skills' className='pb-10 mt-16 h-screen'>
+    <div id='skills' className='pb-10 mt-16 h-screen mb-28 lg:mb-0'>
       <h3 className='text-dim-blue'>My Abilities</h3>
       <h2 className='text-3xl text-highlight-font'>Skills </h2>
       <div className='flex flex-col justify-center items-center'>
