@@ -1,5 +1,6 @@
 import React, {  useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   const titles = [
@@ -14,9 +15,9 @@ const Header = () => {
 
   return (
     <section className="py-5 px-5 bg-main-blue z-10 text-center flex w-full fixed top-0 lg:bg-transparent">
-      <Link  to='/'>
+      <HashLink  smooth to='/#'>
         <h1 className="text-xl text-white lg:text-3xl hover:text-highlight-font">{title.text}<span className="text-highlight-font">{title.highlight}</span></h1>
-      </Link>
+      </HashLink>
 
     </section>
 

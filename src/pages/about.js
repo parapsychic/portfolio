@@ -12,7 +12,7 @@ const About = () => {
   }
 
   return (
-    <div id='about' className='flex flex-col h-screen justify-center'>
+    <div id='about' className='snap-center flex flex-col h-screen justify-center'>
       <div className='pb-10 '>
         <h3 className='text-dim-blue'>My Intro</h3>
         <h2 className='text-3xl'>About <span className='text-highlight-font '>Me</span></h2>

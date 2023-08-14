@@ -8,7 +8,7 @@ const Contact = () => {
 
 
   return (
-    <div id='contact' className='pb-10 h-screen flex flex-col justify-center'>
+    <div id='contact' className='snap-center pb-10 h-screen flex flex-col justify-center'>
       <h2  className='text-3xl mb-5'>Contact <span className='text-highlight-font'>
     { <Typewriter 
         words={[ 'ParaPsychic','Febin', ]}  

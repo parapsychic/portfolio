@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <div id='me' className='flex flex-col justify-center align-middle h-screen'>
+    <div id='me' className='snap-center flex flex-col justify-center align-middle h-screen'>
       <div className='flex flex-col justify-center '>
         <h1 className=' font-md'>Hello, I'm</h1>
         <h1 className='text-3xl '>Febin <span className="text-highlight-font">K Dominic</span></h1>

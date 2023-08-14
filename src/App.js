@@ -8,6 +8,7 @@ import About from './pages/about';
 import Contact from './pages/contact';
 import Home from './pages/home';
 import Linux from './pages/linux';
+import NotFound from './pages/not-found';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
 
@@ -16,8 +17,6 @@ function App() {
     query: '(min-width: 1224px)'
   })
 
-  console.log(isDesktopOrLaptop) 
-  // see more projects on github
   return (
     <div className="App">
       <main className="h-full lg:flex lg:flex-row bg-main-blue text-white font-jetbrains-mono font-extrabold">
@@ -28,13 +27,23 @@ function App() {
         </div>
         <div className='lg:mx-auto'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/skills' element={<Skills />} />
-            <Route path='/linux' element={<Linux />} />
-            <Route path='/contact' element={<Contact />} />
+    {/*            <Route path='/' element={<Home />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/projects' element={<Projects />} />
+                <Route path='/skills' element={<Skills />} />
+                <Route path='/linux' element={<Linux />} />
+                <Route path='/contact' element={<Contact />} /> */}
+            <Route path='/' element={<div className='snap-mandatory snap-y'>
+              <Home/>
+              <About />
+              <Projects />
+              <Skills />
+              <Linux />
+              <Contact />
+              </div>} />
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
+
         </div>
       </main>
     </div>
