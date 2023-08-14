@@ -3,7 +3,7 @@ import { BsLaptop, BsPersonFill } from 'react-icons/bs'
 import { BiMessageSquareDots } from "react-icons/bi";
 import { IoMdSchool } from 'react-icons/io'
 import { AiFillAppstore } from 'react-icons/ai'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link';
 
 const BottomNav = () => {
