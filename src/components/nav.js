@@ -1,9 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
-  const location = useLocation();
 
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
