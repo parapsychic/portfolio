@@ -15,7 +15,7 @@ const Home = () => {
       <div className='flex text-3xl py-5 justify-center gap-9'>
         <Link to="https://github.com/parapsychic" target={"_blank"}><BsGithub className='hover:text-highlight-font' /> </Link>
         <Link to="https://linkedin.com/in/febinkdominic" target={"_blank"}><BsLinkedin className='hover:text-highlight-font' /></Link>
-        <HashLink to="#contact" ><FaPaperPlane className='hover:text-highlight-font' /></HashLink>
+        <HashLink smooth to="#contact" ><FaPaperPlane className='hover:text-highlight-font' /></HashLink>
       </div>
 
     </div>

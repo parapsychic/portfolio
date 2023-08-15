@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { MdGames, MdLaptop, MdSchool, MdSmartphone } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const About = () => {
   const [graduateInfo, setGraduateInfo] = useState('CSE Graduate')
@@ -30,10 +31,10 @@ const About = () => {
           I want to build beautiful and immersive experiences for my users.
         </p>
         <div className='py-5'>
-          <Link to="/contact">
+          <HashLink smooth to="#contact">
             <button className="mx-5 border border-white hover:border-highlight-font hover:text-highlight-font text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300">
               Contact Me
-            </button></Link>
+            </button></HashLink>
 
           <Link to="https://drive.google.com/file/d/1SCz9faKsH93AAc3JJ8-1WpZ1ogSCBxR-/view?usp=sharing" target="_blank">
             <button className="my-5 bg-gradient-to-r from-red-500 to-highlight-font border border-white hover:border-highlight-font hover:text-gray-200 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300">
