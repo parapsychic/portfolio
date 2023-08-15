@@ -4,16 +4,17 @@ import SkillCard from '../components/skill-tile'
 // make a component that takes in props
 const Skills = () => {
   return (
-    <div id='skills' className='snap-center pb-10 mt-16 h-screen mb-28 lg:mb-0'>
+    <div id='skills' className='snap-center pb-10 mt-16 h-fill mb-28 lg:mb-0'>
       <h3 className='text-dim-blue'>My Abilities</h3>
       <h2 className='text-3xl text-highlight-font'>Skills </h2>
-      <div className='flex flex-col justify-center items-center'>
+      <div  className='flex flex-col justify-center items-center'>
         <ul className='grid grid-cols-[repeat(4,_100px)] md:gap-5 place-items-center my-10 mx-10'>
           <li className='h-fit'><SkillCard hover="Dart" imageUrl="/skills/dart.png" /></li>
           <li className='h-fit'><SkillCard hover="HTML" imageUrl="/skills/html5.png" /></li>
           <li className='h-fit'><SkillCard hover="CSS" imageUrl="/skills/css3.png" /></li>
           <li className='h-fit'><SkillCard hover="JavaScript" imageUrl="/skills/js.png" /></li>
         </ul>
+        <div data-section id='skills-main' className='h-0 w-0'></div>
         <ul className='grid grid-cols-2 mx-10 place-items-center mb-10'>
           <li className='h-fill'><SkillCard hover="Linux" imageUrl="/skills/linux.png" /></li>
           <li className='h-fill'><SkillCard hover="Bash" imageUrl="/skills/bash.png" /></li>

@@ -10,7 +10,7 @@ const Linux = () => {
         <Link to="https://github.com/parapsychic/dot-files" target={"_blank"} className='mb-5 text-2xl flex gap-3 align-middle items-center justify-center hover:text-highlight-font'>
           <BsGithub /><p className='font-normal underline'>DOTS</p>
         </Link>
-        <ul className='mx-10 grid grid-cols-1 lg:grid-cols-2 gap-5'>
+        <ul data-section id='linux-main' className='mx-10 grid grid-cols-1 lg:grid-cols-2 gap-5'>
           <li className='max-w-[500px] md:max-w-[600px]  m-auto hover:drop-shadow-xl'>
             <img src="/linux/dwm.png" alt='dwm desktop' />
             <p className='py-5'> DWM/XORG </p>

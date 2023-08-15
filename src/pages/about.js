@@ -16,7 +16,8 @@ const About = () => {
       <div className='pb-10 '>
         <h3 className='text-dim-blue'>My Intro</h3>
         <h2 className='text-3xl'>About <span className='text-highlight-font '>Me</span></h2>
-        <ul className="pt-5 w-52 m-auto">
+        <div data-section id='about-main' className='h-0 w-0'></div>
+        <ul  className="pt-5 w-52 m-auto">
           <li className='flex gap-3 text-xl pb-5 flex-start align-baseline'><MdSchool className='h-auto' /><span onClick={handleHover}>{graduateInfo}</span></li>
           <li className='flex gap-3 text-xl pb-5 flex-start align-baseline'><MdGames className='h-auto' /> Game Developer</li>
           <li className='flex gap-3 text-xl pb-5 flex-start align-baseline'><MdSmartphone className='h-auto' /> App Developer</li>

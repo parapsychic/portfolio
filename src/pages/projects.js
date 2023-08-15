@@ -17,7 +17,8 @@ const Projects = () => {
           <BsGithub className='h-auto' /> <p>Find Me on Github</p>
         </button>
       </Link>
-      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-5xl grid- gap-5 place-items-center mb-10'>
+      <div data-section id='projects-main' className='h-0 w-0'></div>
+      <ul  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:max-w-5xl grid- gap-5 place-items-center mb-10'>
         <li><Card project={{
           title: "Adithi Visitorbook",
           imgUrl: '/project-images/adithi.jpg',
