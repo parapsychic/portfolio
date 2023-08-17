@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'tab': { 'raw': '(min-width: 1224px)' },
+      },
       colors: {
         "main-blue": "#353353",
         "stroke-blue": "#4A4865",

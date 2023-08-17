@@ -20,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <main className="h-full lg:flex lg:flex-row bg-main-blue text-white font-jetbrains-mono font-extrabold">
-        <div className='border-r-2 border-stroke-blue max-w-xl w-1/6 lg:sticky bg-main-blue z-10'>
+        <div className='tab:border-r-2 border-stroke-blue max-w-xl w-1/6 lg:sticky bg-main-blue z-10'>
           <Header />
           {isDesktopOrLaptop && <NavBar />}
           {!isDesktopOrLaptop && <BottomNav />}
