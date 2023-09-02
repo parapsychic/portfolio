@@ -36,7 +36,7 @@ const About = () => {
               Contact Me
             </button></HashLink>
 
-          <Link to="https://drive.google.com/file/d/1SCz9faKsH93AAc3JJ8-1WpZ1ogSCBxR-/view?usp=sharing" target="_blank">
+          <Link to="https://docs.google.com/document/d/1ZR9Gj3rzHNbWrY7pCynroOiBnmuWgf1pj5-V-nwlLH8/edit?usp=sharing" target="_blank">
             <button className="my-5 bg-gradient-to-r from-red-500 to-highlight-font border border-white hover:border-highlight-font hover:text-gray-200 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition-all duration-300">
               Download CV
             </button>
