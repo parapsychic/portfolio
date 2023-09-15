@@ -55,6 +55,15 @@ const Projects = () => {
         }
         } onClick="https://github.com/parapsychic/2lazy4arch" />
         </li>
+
+
+        <li><Card project={{
+          title: "Big Bubble Deep Trouble",
+          imgUrl: '/project-images/bigbubble.png',
+          desc: "A small Unity game developed by a small team of remote developers at Game Developers Kerala discord server."
+        }
+        } onClick="https://gamedeveloperskerala.itch.io/big-bubble-deep-trouble" />
+        </li>
       </ul>
     </div>
   )
