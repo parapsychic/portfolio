@@ -51,7 +51,7 @@ const Projects = () => {
         <li><Card project={{
           title: "2lazy4arch",
           imgUrl: '/project-images/archinstall.jpg',
-          desc: "An Arch installer written in Rust with TUI written using Ratatui library."
+          desc: "An Arch installer rewritten in Rust with TUI written using Ratatui library, originally written in bash."
         }
         } onClick="https://github.com/parapsychic/2lazy4arch" />
         </li>
