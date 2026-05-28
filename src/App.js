@@ -1,54 +1,36 @@
-import { useMediaQuery } from 'react-responsive';
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import BottomNav from './components/bottomnav';
-import Header from './components/header';
-import NavBar from './components/nav';
-import About from './pages/about';
-import Contact from './pages/contact';
-import Home from './pages/home';
-import Linux from './pages/linux';
-import NotFound from './pages/not-found';
-import Projects from './pages/projects';
-import Skills from './pages/skills';
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import RespectEgg from "./components/RespectEgg";
 
-function App() {
-  const isDesktopOrLaptop = useMediaQuery({
-    query: '(min-width: 1224px)'
-  })
-
+export default function App() {
   return (
-    <div className="App">
-      <main className="h-full lg:flex lg:flex-row bg-main-blue text-white font-jetbrains-mono font-extrabold">
-        <div className='tab:border-r-2 border-stroke-blue max-w-xl w-1/6 lg:sticky bg-main-blue z-10'>
-          <Header />
-          {isDesktopOrLaptop && <NavBar />}
-          {!isDesktopOrLaptop && <BottomNav />}
-        </div>
-        <div className='lg:mx-auto'>
-          <Routes>
-    {/*            <Route path='/' element={<Home />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/projects' element={<Projects />} />
-                <Route path='/skills' element={<Skills />} />
-                <Route path='/linux' element={<Linux />} />
-                <Route path='/contact' element={<Contact />} /> */}
-            <Route path='/' element={<div className='snap-mandatory snap-y'>
-              <Home/>
-              <About />
-              <Projects />
-              <Skills />
-              <Linux />
-              <Contact />
-              </div>} />
-            <Route path='*' element={<NotFound/>}/>
-          </Routes>
+    <div className="bg-bg text-ink min-h-screen antialiased font-body">
+      <a
+        href="#about"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-ink focus:text-bg focus:px-3 focus:py-2 focus:rounded font-semibold"
+      >
+        Skip to content
+      </a>
 
-        </div>
+      <Nav />
+
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Contact />
       </main>
+
+      <Footer />
+      <RespectEgg />
     </div>
   );
-
 }
-
-export default App;

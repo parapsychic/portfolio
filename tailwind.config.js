@@ -1,28 +1,47 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
-      screens: {
-        'tab': { 'raw': '(min-width: 1224px)' },
-      },
       colors: {
-        "main-blue": "#353353",
-        "stroke-blue": "#4A4865",
-        "dim-blue": "#9593BC",
-        "highlight-font": "#FF4D61",
-        white: "#FFFFFF",
+        bg: "#FFE45C",
+        bgAlt: "#FFD93D",
+        ink: "#0E0E10",
+        ink2: "#2A2A2E",
+        mute: "#5B5B62",
+        paper: "#FFFFFF",
+        pink: "#FF3D7F",
+        blue: "#2D5BFF",
+        lime: "#B5E000",
+        coral: "#FF6A3D",
+        sky: "#9BD6FF",
+        violet: "#C8A2FF",
       },
       fontFamily: {
-        "jetbrains-mono": ["JetBrains Mono", "monospace"],
+        sans: ["'Bricolage Grotesque'", "system-ui", "sans-serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
       },
-      gridTemplateRows: {
-        '1x2': 'grid-template-columns: 1fr 4fr',
-      }
+      boxShadow: {
+        chunk: "6px 6px 0 0 #0E0E10",
+        chunkSm: "4px 4px 0 0 #0E0E10",
+        chunkLg: "10px 10px 0 0 #0E0E10",
+      },
+      animation: {
+        wiggle: "wiggle 2.4s ease-in-out infinite",
+        spinSlow: "spin 14s linear infinite",
+        bob: "bob 5s ease-in-out infinite",
+      },
+      keyframes: {
+        wiggle: {
+          "0%,100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+        bob: {
+          "0%,100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+      },
     },
   },
   plugins: [],
-}
-
+};
