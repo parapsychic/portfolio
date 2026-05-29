@@ -9,8 +9,8 @@ export const profile = {
   linkedin: "https://linkedin.com/in/febinkdominic",
   resumeUrl: "/Febin_K_Dominic_Resume.pdf",
   oneLiner:
-    "Full-stack engineer in Bangalore. Backend-leaning (C# / .NET), comfortable on the frontend too — Flutter and Vue.js.",
-  bio: `I'm Febin. I work at DeltaX on Birdigo — a CRM used by a few hundred sales teams. Most of my work is backend (C# / ASP.NET Core, SQL Server, Redis), but I've also shipped Flutter and Vue.js code across the same product.`,
+    "Full-stack engineer in Bangalore. Backend-leaning (C# / .NET), comfortable on the frontend too with Flutter and Vue.js.",
+  bio: `I'm Febin. I work at DeltaX on Birdigo, a CRM used by a few hundred sales teams. Most of my work is backend (C# / ASP.NET Core, SQL Server, Redis), but I've also shipped Flutter and Vue.js code across the same product.`,
 };
 
 export const nowDoing = [
@@ -57,7 +57,7 @@ export const experience = [
       "Diagnosed and refactored SQL Server stored procedures and indexes on million-row tables; cut lead query time from 30s to under 1s and reduced call-log latency by 80%.",
       "Implemented aggressive Redis + in-memory caching for high-read, low-write entities, reducing overall API latency by 50–75% across the platform.",
       "Designed Nests (lead lifecycle engine): configurable field mappings, a state-machine for status transitions with per-status rules, automation triggers on state changes, and filtering by status/user/label. Extended the model for B2B Opportunities with company-associated leads, contact roles, and multi-stakeholder workflows.",
-      "Redesigned the labels system into a polymorphic, entity-agnostic architecture — same labels configurable across leads, call logs, companies, contacts, and their sub-entities.",
+      "Redesigned the labels system into a polymorphic, entity-agnostic architecture. Same labels configurable across leads, call logs, companies, contacts, and their sub-entities.",
       "Built an Insights API with configurable date-range aggregations for lead and call-log status breakdowns; implemented RBAC-style access filters for multi-number WhatsApp chat with per-store and per-user scoping.",
       "Wrote SpecFlow BDD tests, maintained Jenkinsfiles for all microservices, and automated Flutter CI/CD via Jenkins + Fastlane with staging and production channels.",
     ],
@@ -107,17 +107,17 @@ export const skills = [
 
 export const projects = [
   {
-    name: "Offline e-Visitors' Book — INS Vikrant",
+    name: "Offline e-Visitors' Book for INS Vikrant",
     org: "Indian Navy",
     description:
       "An offline-first kiosk system for the Indian Navy's aircraft carrier INS Vikrant, capturing handwritten visitor comments and photos without network access. Deployed on a Raspberry Pi and still in active use on-board.",
     stack: ["Flutter", "Raspberry Pi", "SQLite"],
     link: "https://ajce.in/cse/insvikrant.html",
     linkLabel: "Project page",
-    highlight: "Real-world deployment for the Indian Navy — not a demo.",
+    highlight: "Real-world deployment for the Indian Navy. Not a demo.",
   },
   {
-    name: "ishowoff — VSCode Activity Visualizer",
+    name: "ishowoff: VSCode Activity Visualizer",
     org: "Open source",
     description:
       "VSCode extension that tracks coding activity and generates an SVG visualization, auto-committed to a GitHub profile via GitHub Actions. JS extension talking to a Rust backend.",

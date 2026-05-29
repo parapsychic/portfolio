@@ -112,7 +112,7 @@ export default function RespectEgg() {
         ))}
       </div>
 
-      {/* meter (no counter text — figure it out) */}
+      {/* meter (no counter text, figure it out) */}
       {count > 0 && !maxed && !doneRef.current && (
         <div
           className="fixed bottom-5 right-5 z-[60] bg-paper rounded-md p-3 w-52"

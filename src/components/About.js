@@ -9,7 +9,7 @@ export default function About() {
           <p>{profile.bio}</p>
           <p>
             I lean backend, but I'm comfortable jumping into the frontend or
-            mobile side when a feature needs it — most of the things I've
+            mobile side when a feature needs it. Most of the things I've
             shipped touched more than one part of the stack.
           </p>
           <p>

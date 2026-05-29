@@ -75,6 +75,8 @@ export default function Nav() {
           <li>
             <a
               href="/Febin_K_Dominic_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="ml-2 px-3 py-1.5 bg-ink text-bg rounded-md border-2 border-ink hover:bg-pink hover:text-paper transition-colors shadow-chunkSm"
             >
               résumé ↗
@@ -110,6 +112,8 @@ export default function Nav() {
           <li>
             <a
               href="/Febin_K_Dominic_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
               className="inline-block mt-2 px-3 py-1.5 bg-ink text-bg rounded-md shadow-chunkSm"
             >
               résumé ↗

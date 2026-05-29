@@ -9,7 +9,7 @@ export default function Experience() {
       id="experience"
       label="work"
       title="What I've worked on."
-      kicker="Two years at DeltaX, on Birdigo — a CRM running on ASP.NET Core, SQL Server, Redis, and Kubernetes."
+      kicker="Two years at DeltaX building Birdigo, a CRM running on ASP.NET Core, SQL Server, Redis, and Kubernetes."
       alt
     >
       <div className="space-y-8">

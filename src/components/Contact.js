@@ -3,8 +3,8 @@ import { profile } from "../data";
 
 const channels = [
   { label: "email", value: profile.email, href: `mailto:${profile.email}`, tone: "bg-pink" },
-  { label: "github", value: "github.com/parapsychic", href: profile.github, tone: "bg-blue" },
-  { label: "linkedin", value: "linkedin.com/in/febinkdominic", href: profile.linkedin, tone: "bg-coral" },
+  { label: "github", value: "@parapsychic", href: profile.github, tone: "bg-blue" },
+  { label: "linkedin", value: "@febinkdominic", href: profile.linkedin, tone: "bg-coral" },
   { label: "sh*tposting", value: "parapsychic.net", href: "https://parapsychic.net", tone: "bg-lime" },
 ];
 
@@ -21,14 +21,15 @@ export default function Contact() {
           Pick whichever channel works for you. I check them all, but email is fastest.
         </p>
 
-        <ul className="grid sm:grid-cols-2 gap-4">
+        <ul className="grid sm:grid-cols-2 gap-4 place-items-stretch justify-items-center sm:justify-items-stretch">
+
           {channels.map((c) => (
-            <li key={c.label}>
+            <li key={c.label} className="w-full max-w-sm sm:max-w-none min-w-0">
               <a
                 href={c.href}
                 target={c.href.startsWith("http") ? "_blank" : undefined}
                 rel="noreferrer"
-                className="group flex items-center gap-4 p-4 border-2 border-ink rounded-xl bg-bg hover:bg-ink hover:text-bg transition-colors"
+                className="group flex items-center gap-4 p-4 border-2 border-ink rounded-xl bg-bg hover:bg-ink hover:text-bg transition-colors min-w-0"
               >
                 <span
                   className={`w-10 h-10 ${c.tone} border-2 border-ink rounded-md shadow-chunkSm shrink-0`}
@@ -38,7 +39,7 @@ export default function Contact() {
                   <span className="block text-xs uppercase tracking-widest font-bold text-mute group-hover:text-bg">
                     {c.label}
                   </span>
-                  <span className="block font-semibold truncate">{c.value}</span>
+                  <span className="block font-semibold truncate text-sm sm:text-base">{c.value}</span>
                 </span>
               </a>
             </li>
@@ -54,6 +55,8 @@ export default function Contact() {
           </a>
           <a
             href="/Febin_K_Dominic_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
             className="px-5 py-3 bg-bg border-2 border-ink rounded-md font-semibold shadow-chunk hover:bg-lime transition-colors"
           >
             grab my résumé

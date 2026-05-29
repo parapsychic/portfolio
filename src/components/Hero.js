@@ -8,13 +8,13 @@ export default function Hero() {
     >
       <div aria-hidden className="absolute inset-0 dots opacity-25 pointer-events-none" />
 
-      {/* desktop-only decorative shapes — 5 morpher colors */}
+      {/* desktop-only decorative shapes, 5 morpher colors */}
       <div aria-hidden className="hidden lg:block absolute top-28 right-12 w-16 h-16 bg-pink border-2 border-ink rounded-full shadow-chunk animate-bob" />
       <div aria-hidden className="hidden lg:block absolute bottom-32 left-10 w-14 h-14 bg-blue border-2 border-ink shadow-chunk animate-bob" style={{ animationDelay: "-2s" }} />
       <div aria-hidden className="hidden lg:block absolute top-44 left-1/3 w-9 h-9 bg-lime border-2 border-ink rotate-12 shadow-chunkSm" />
       <div aria-hidden className="hidden lg:block absolute bottom-20 right-1/3 w-10 h-10 bg-coral border-2 border-ink rounded-md shadow-chunkSm rotate-[-8deg]" />
 
-      {/* subtle comet streak — kimi no na wa nod */}
+      {/* subtle comet streak, kimi no na wa nod */}
       <svg
         aria-hidden
         className="hidden md:block absolute top-20 right-1/4 w-40 h-12 opacity-70"
@@ -33,10 +33,13 @@ export default function Hero() {
 
       <div className="relative max-w-6xl w-full mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-7">
-          <span className="sticker bg-paper mb-6 inline-flex">
+          <a
+            href={`mailto:${profile.email}?subject=${encodeURIComponent("Let's connect")}&body=${encodeURIComponent("Hi Febin,\n\nSaw your portfolio and would love to chat about a role we're hiring for.\n\n")}`}
+            className="sticker bg-paper mb-6 inline-flex hover:bg-lime transition-colors"
+          >
             <span className="w-2 h-2 rounded-full bg-lime border border-ink" />
             open to new roles
-          </span>
+          </a>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-sans font-extrabold leading-[0.95] text-ink break-words">
             hi, i'm{" "}
